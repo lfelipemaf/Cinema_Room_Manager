@@ -36,10 +36,10 @@ public class Main {
             }
         }
 
-        System.out.println ( "\n1. Show the seats\n" +
-                "2. Buy a ticket\n" +
-                "3. Statistics\n" +
-                "0. Exit" );
+        //System.out.println ( "\n1. Show the seats\n" +
+          //      "2. Buy a ticket\n" +
+            //    "3. Statistics\n" +
+            //    "0. Exit" );
 
         int choice = scanner.nextInt ( );
 
