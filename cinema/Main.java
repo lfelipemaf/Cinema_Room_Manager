@@ -17,6 +17,8 @@ public class Main {
         int income = 0;
         cinema.setProfit ( profit, cinema.getNumberOfRows (), cinema.getNumberOfSeats ( ), cinema.getTotalSeats ( ) );
 
+        //test do git v0.1
+
         cinemaRoom[0][0] = " ";
         for (int i = 0; i < 1; i++) {
             for (int j = 0; j <= cinema.getNumberOfSeats (); j++) {
