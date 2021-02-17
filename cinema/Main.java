@@ -17,7 +17,7 @@ public class Main {
         int income = 0;
         cinema.setProfit ( profit, cinema.getNumberOfRows (), cinema.getNumberOfSeats ( ), cinema.getTotalSeats ( ) );
 
-        //test do git v0.1
+
 
         cinemaRoom[0][0] = " ";
         for (int i = 0; i < 1; i++) {
@@ -36,10 +36,7 @@ public class Main {
             }
         }
 
-        //System.out.println ( "\n1. Show the seats\n" +
-          //      "2. Buy a ticket\n" +
-            //    "3. Statistics\n" +
-            //    "0. Exit" );
+        cinema.showMenu();
 
         int choice = scanner.nextInt ( );
 
@@ -70,27 +67,17 @@ public class Main {
                     }
                     cinema.setCountTickets (countTicket += 1);
                     cinema.setIncome ( income += Cinema.buyTicket ( cinema.getRowNumber ( ), cinema.getSeatNumber ( ), cinema.getTotalSeats ( ), cinema.getNumberOfRows ( ),cinemaRoom));
-                    System.out.println ( "\n1. Show the seats\n" +
-                            "2. Buy a ticket\n" +
-                            "3. Statistics\n" +
-                            "0. Exit" );
+                    cinema.showMenu();
 
                     choice = scanner.nextInt ( );
                     break;
                 case 3:
                     Cinema.statistics ( cinema.getTotalSeats ( ), cinema.getCountTickets (), cinema.getIncome(), cinema.getProfit ()  );
-
-                    System.out.println ( "\n1. Show the seats\n" +
-                            "2. Buy a ticket\n" +
-                            "3. Statistics\n" +
-                            "0. Exit" );
+                    cinema.showMenu();
                     choice = scanner.nextInt ( );
                     break;
                 default:
-                    System.out.println ( "\n1. Show the seats\n" +
-                            "2. Buy a ticket\n" +
-                            "3. Statistics\n" +
-                            "0. Exit" );
+                    cinema.showMenu();
                     choice = scanner.nextInt ( );
                     break;
 
