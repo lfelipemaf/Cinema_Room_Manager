@@ -1,4 +1,4 @@
-# **Cinema_Room_Manager**
+# **Cinema Room Manager**
 
 ## About
 Cinema has been a part of the entertainment industry for a long time: 
