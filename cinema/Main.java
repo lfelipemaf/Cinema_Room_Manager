@@ -36,25 +36,14 @@ public class Main {
             }
         }
 
-
         cinema.showMenu();
-
-        System.out.println ( "\n1. Show the seats\n" +
-                "2. Buy a ticket\n" +
-                "3. Statistics\n" +
-                "0. Exit" ); 
-
-
         int choice = scanner.nextInt ( );
 
         while (choice != 0) {
             switch (choice) {
                 case 1:
                     cinema.showSeats (cinemaRoom);
-                    System.out.println ( "\n1. Show the seats\n" +
-                            "2. Buy a ticket\n" +
-                            "3. Statistics\n" +
-                            "0. Exit" );
+                    cinema.showMenu();
                     choice = scanner.nextInt ( );
                     break;
                 case 2:
